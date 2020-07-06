@@ -1,0 +1,210 @@
+[
+  {
+    "id": "3265111282",
+    "book": {
+      "id": {
+        "@type": "integer",
+        "#text": "52123166"
+      },
+      "isbn": {
+        "IsbnClass": {
+          "@nil": "true"
+        },
+        "String": null
+      },
+      "isbn13": {
+        "IsbnClass": {
+          "@nil": "true"
+        },
+        "String": null
+      },
+      "text_reviews_count": {
+        "@type": "integer",
+        "#text": "24"
+      },
+      "uri": "kca://book/amzn1.gr.book.v3.8mYrWlFvFwK7ZetE",
+      "title": "Dangerous Prayers: Because Following Jesus Was Never Meant to Be Safe",
+      "title_without_series": "Dangerous Prayers: Because Following Jesus Was Never Meant to Be Safe",
+      "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+      "small_image_url": "https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png",
+      "large_image_url": null,
+      "link": "https://www.goodreads.com/book/show/52123166-dangerous-prayers",
+      "num_pages": "",
+      "format": "",
+      "edition_information": null,
+      "publisher": "",
+      "publication_day": "",
+      "publication_year": "",
+      "publication_month": "",
+      "average_rating": "4.56",
+      "ratings_count": "1125",
+      "description": "<strong>Do you ever wonder, \"Why doesn't God answer my prayers?\" Do you wish you could see the evidence that prayer changes lives? Are you tired of playing it safe with your faith? In <em>Dangerous Prayers</em>, <em>New York Times </em>bestselling author Craig Groeschel helps you unlock your greatest potential and tackle your greatest fears by praying stronger, more passionate prayers that lead you into a deeper faith.</strong><br /><br />Prayer moves the heart of God - but some prayers move Him more than others. He wants more for us than a tepid faith and half-hearted routines at the dinner table. He's called you to a life of courage, not comfort.<br /><br />This book will show you how to pray the prayers that search your soul, break your habits, and send you to pursue the calling God has for you. But be warned: if you're fine with settling for what's easy, or you're OK with staying on the sidelines, this book isn't for you. You'll be challenged. You'll be tested. You'll be moved to take a long, hard look at your heart.<br /><br />But you'll be inspired, too.<br /><br />You'll be inspired to pray boldly. To pray powerfully. To pray with fire. You'll see how you can trade ineffective prayers and lukewarm faith for raw, daring prayers that will push you to new levels of passion and fulfillment. You'll discover the secret to overcome fears of loss, rejection, failure, and the unknown and welcome the blessings God has for you on the other side.<br /><br />You'll gain the courage it takes to pray dangerous prayers.",
+      "authors": {
+        "author": {
+          "id": "50265",
+          "name": "Craig Groeschel",
+          "role": "",
+          "image_url": {
+            "@nophoto": "false",
+            "#cdata-section": "https://images.gr-assets.com/authors/1536291738p5/50265.jpg"
+          },
+          "small_image_url": {
+            "@nophoto": "false",
+            "#cdata-section": "https://images.gr-assets.com/authors/1536291738p2/50265.jpg"
+          },
+          "link": {
+            "#cdata-section": "https://www.goodreads.com/author/show/50265.Craig_Groeschel"
+          },
+          "average_rating": "4.16",
+          "ratings_count": "25313",
+          "text_reviews_count": "2049"
+        }
+      },
+      "published": "",
+      "work": {
+        "id": "71420155",
+        "uri": "kca://work/amzn1.gr.work.v1.P4ZGmcqPPwuj5VCIfQL4GA"
+      }
+    },
+    "rating": "0",
+    "votes": "0",
+    "spoiler_flag": "false",
+    "spoilers_state": "none",
+    "shelves": {
+      "shelf": [
+        {
+          "@exclusive": "true",
+          "@id": "274128763",
+          "@name": "currently-reading",
+          "@review_shelf_id": "2907392546",
+          "@sortable": "false"
+        },
+        {
+          "@exclusive": "false",
+          "@id": "380270912",
+          "@name": "own",
+          "@review_shelf_id": "3045292207",
+          "@sortable": "false"
+        }
+      ]
+    },
+    "recommended_for": "",
+    "recommended_by": "",
+    "started_at": "Sun Apr 05 17:27:25 -0700 2020",
+    "read_at": "",
+    "date_added": "Sun Apr 05 17:27:25 -0700 2020",
+    "date_updated": "Mon Jun 22 19:43:14 -0700 2020",
+    "read_count": "1",
+    "body": "",
+    "comments_count": "0",
+    "url": {
+      "#cdata-section": "https://www.goodreads.com/review/show/3265111282"
+    },
+    "link": {
+      "#cdata-section": "https://www.goodreads.com/review/show/3265111282"
+    },
+    "owned": "0"
+  },
+  {
+    "id": "2458584268",
+    "book": {
+      "id": {
+        "@type": "integer",
+        "#text": "11137"
+      },
+      "isbn": {
+        "IsbnClass": null,
+        "String": "0060652926"
+      },
+      "isbn13": {
+        "IsbnClass": null,
+        "String": "9780060652920"
+      },
+      "text_reviews_count": {
+        "@type": "integer",
+        "#text": "685"
+      },
+      "uri": "kca://book/amzn1.gr.book.v1.ON9MdF25ocW65MIEUT-k-Q",
+      "title": "Mere Christianity",
+      "title_without_series": "Mere Christianity",
+      "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1492747098l/11137._SX98_.jpg",
+      "small_image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1492747098l/11137._SY75_.jpg",
+      "large_image_url": null,
+      "link": "https://www.goodreads.com/book/show/11137.Mere_Christianity",
+      "num_pages": "227",
+      "format": "Paperback",
+      "edition_information": null,
+      "publisher": "HarperOne",
+      "publication_day": "21",
+      "publication_year": "2015",
+      "publication_month": "4",
+      "average_rating": "4.33",
+      "ratings_count": "286844",
+      "description": "Esta obra poderosa y práctica es una de las más populares y queridas introducciones a la fe cristiana jamás escrita Mero Cristianismo reúne las legendarias charlas radiofónicas de C. S. Lewis que se transmitieron durante tiempos de guerra, charlas en las cuales él se proponía \"\"explicar y defender las creencias que han sido común a casi todos los cristianos de todos los tiempos.\"\" Rechazando los límites que dividen las distintas denominaciones del cristianismo, C. S. Lewis ofrece una inigualable oportunidad al creyente y al no creyente para escuchar un argumento fuerte y racional para la fe cristiana. Esta es una colección de la genialidad de Lewis que aún se mantiene viva para el lector moderno y que a la vez confirma su reputación como el escritor y pensador más importante de nuestros tiempos. Mero Cristianismo es su libro más popular y ha vendido millones de ejemplares a través del mundo.",
+      "authors": {
+        "author": {
+          "id": "1069006",
+          "name": "C.S. Lewis",
+          "role": "",
+          "image_url": {
+            "@nophoto": "false",
+            "#cdata-section": "https://images.gr-assets.com/authors/1564671804p5/1069006.jpg"
+          },
+          "small_image_url": {
+            "@nophoto": "false",
+            "#cdata-section": "https://images.gr-assets.com/authors/1564671804p2/1069006.jpg"
+          },
+          "link": {
+            "#cdata-section": "https://www.goodreads.com/author/show/1069006.C_S_Lewis"
+          },
+          "average_rating": "4.15",
+          "ratings_count": "5712285",
+          "text_reviews_count": "132607"
+        }
+      },
+      "published": "2015",
+      "work": {
+        "id": "801500",
+        "uri": "kca://work/amzn1.gr.work.v1.1--f35u3l8IB59UbjrGtKw"
+      }
+    },
+    "rating": "0",
+    "votes": "0",
+    "spoiler_flag": "false",
+    "spoilers_state": "none",
+    "shelves": {
+      "shelf": [
+        {
+          "@exclusive": "true",
+          "@id": "274128763",
+          "@name": "currently-reading",
+          "@review_shelf_id": "2870427811",
+          "@sortable": "false"
+        },
+        {
+          "@exclusive": "false",
+          "@id": "380270912",
+          "@name": "own",
+          "@review_shelf_id": "3045291184",
+          "@sortable": "false"
+        }
+      ]
+    },
+    "recommended_for": "",
+    "recommended_by": "",
+    "started_at": "Wed Mar 11 22:01:26 -0700 2020",
+    "read_at": "",
+    "date_added": "Sun Jul 15 20:47:02 -0700 2018",
+    "date_updated": "Mon Jun 22 19:42:33 -0700 2020",
+    "read_count": "1",
+    "body": "",
+    "comments_count": "0",
+    "url": {
+      "#cdata-section": "https://www.goodreads.com/review/show/2458584268"
+    },
+    "link": {
+      "#cdata-section": "https://www.goodreads.com/review/show/2458584268"
+    },
+    "owned": "0"
+  }
+]
