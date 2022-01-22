@@ -1,0 +1,53 @@
+https://keybase.io/benjamhooper
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.benhooper.org
+  * I am benjamhooper (https://keybase.io/benjamhooper) on keybase.
+  * I have a public key ASDf3GEagqDbx9Bf4jSPtLrHiAbnSYupBuWqvyqZYeNH4go
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120a50ef10f768a765fbb958e2c772664f03e9a8bbe5e0f3a8cc5fe471da8938ef60a",
+      "host": "keybase.io",
+      "kid": "0120dfdc611a82a0dbc7d05fe2348fb4bac78806e7498ba906e5aabf2a9961e347e20a",
+      "uid": "17f06a4da4a2248bb43887b2586a6d19",
+      "username": "benjamhooper"
+    },
+    "merkle_root": {
+      "ctime": 1642891625,
+      "hash": "8376a91d76b7b4ed95ebaada8f0bb8e19a04faec7cea47994eba0e54ad2610f8a8c583f5707ce23ceb64b08b348dbab1de2d38cd781675bb892bebafdfe47777",
+      "hash_meta": "e9862c0ff432310745f7a4cc85586f80902e5fd43f640a2208a0bb51c33807be",
+      "seqno": 21697470
+    },
+    "service": {
+      "entropy": "2Hlei68EX10xIFthiWhM3AJn",
+      "hostname": "www.benhooper.org",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.9.0"
+  },
+  "ctime": 1642891704,
+  "expire_in": 504576000,
+  "prev": "effd04f0506fa33d85d025a075e55d9da19cabf2ca16c8fef4cd364ff7ee6a30",
+  "seqno": 13,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg39xhGoKg28fQX+I0j7S6x4gG50mLqQblqr8qmWHjR+IKp3BheWxvYWTESpcCDcQg7/0E8FBvoz2F0CWgdeVdnaGcq/LKFsj+9M02T/fuajDEILYEabk5xVhkD5KH0jMWlLZh2xZTRJ2AZ/h339g8bLspAgHCo3NpZ8RAPpyiPl9PImxZTe+4KUEGi2wOK5PphbyrSWR7NAYv1bVIUdoFxm5RgUsrnLQQiqlwuMzr/wofFP32myq82Gv4CahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIDhDmhTtNJgk1jeb7dP0Jt8kMEIHXX4KBnDXQOdd3JM+o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/benjamhooper
