@@ -1,3 +1,4 @@
+==================================================================
 https://keybase.io/benjamhooper
 --------------------------------------------------------------------
 
@@ -19,13 +20,13 @@ To do so, I am signing this object:
       "username": "benjamhooper"
     },
     "merkle_root": {
-      "ctime": 1642891625,
-      "hash": "8376a91d76b7b4ed95ebaada8f0bb8e19a04faec7cea47994eba0e54ad2610f8a8c583f5707ce23ceb64b08b348dbab1de2d38cd781675bb892bebafdfe47777",
-      "hash_meta": "e9862c0ff432310745f7a4cc85586f80902e5fd43f640a2208a0bb51c33807be",
-      "seqno": 21697470
+      "ctime": 1642892080,
+      "hash": "748dfa3656c3d09b498b58f32ea5efdc855187e76c2066f7be288942f485b2bf585bade09a8ff7f15fafdad0940a4456e999fce92286eadc64d55b9e568f8dbc",
+      "hash_meta": "8e34b07ae93e97d752a83b530e61d4517be4ffa03e094497fb550c51435d7472",
+      "seqno": 21697531
     },
     "service": {
-      "entropy": "2Hlei68EX10xIFthiWhM3AJn",
+      "entropy": "wS74UVbT3mpYdBJi39r9dFJI",
       "hostname": "www.benhooper.org",
       "protocol": "https:"
     },
@@ -36,18 +37,20 @@ To do so, I am signing this object:
     "name": "keybase.io go client",
     "version": "5.9.0"
   },
-  "ctime": 1642891704,
+  "ctime": 1642892095,
   "expire_in": 504576000,
-  "prev": "effd04f0506fa33d85d025a075e55d9da19cabf2ca16c8fef4cd364ff7ee6a30",
-  "seqno": 13,
+  "prev": "fad918333b9e7aea8a86bbf6541eb4f329f251d0b94ec9ab979026ca88f127ea",
+  "seqno": 15,
   "tag": "signature"
 }
 
 which yields the signature:
 
-hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg39xhGoKg28fQX+I0j7S6x4gG50mLqQblqr8qmWHjR+IKp3BheWxvYWTESpcCDcQg7/0E8FBvoz2F0CWgdeVdnaGcq/LKFsj+9M02T/fuajDEILYEabk5xVhkD5KH0jMWlLZh2xZTRJ2AZ/h339g8bLspAgHCo3NpZ8RAPpyiPl9PImxZTe+4KUEGi2wOK5PphbyrSWR7NAYv1bVIUdoFxm5RgUsrnLQQiqlwuMzr/wofFP32myq82Gv4CahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIDhDmhTtNJgk1jeb7dP0Jt8kMEIHXX4KBnDXQOdd3JM+o3RhZ80CAqd2ZXJzaW9uAQ==
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg39xhGoKg28fQX+I0j7S6x4gG50mLqQblqr8qmWHjR+IKp3BheWxvYWTESpcCD8Qg+tkYMzueeuqKhrv2VB608ynyUdC5Tsmrl5AmyojxJ+rEIIZ/uqB8rIF0qQCNk7TWM0iDLIgTFG7O4zM3PZewiBNXAgHCo3NpZ8RAUettu4tWdakukhN6mhl2kSaAj/Ys+yGl6l3DgjHoPA9UmoPLAEdBebnRldqqaye4DUYnYSjkFDbB82j+qlGLC6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIMW2kXOlKOIBm5lO9AJtB4JJwWFINDcitkpmnDGybFmqo3RhZ80CAqd2ZXJzaW9uAQ==
 
 And finally, I am proving ownership of this host by posting or
 appending to this document.
 
 View my publicly-auditable identity here: https://keybase.io/benjamhooper
+
+==================================================================
