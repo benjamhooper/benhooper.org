@@ -1,0 +1,15 @@
+{
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["/images/*", "/Resume.pdf", "/keybase.txt", "/robots.txt", "/sitemap.xml"]
+  },
+  "responseOverrides": {
+    "404": { "rewrite": "/404/index.html", "statusCode": 404 }
+  },
+  "globalHeaders": {
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "DENY",
+    "Referrer-Policy": "strict-origin-when-cross-origin"
+  },
+  "mimeTypes": { ".txt": "text/plain" }
+}
