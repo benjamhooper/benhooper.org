@@ -3,7 +3,7 @@
 import { socialLinks } from '@/content/social'
 import SocialLink from '@/components/ui/SocialLink'
 
-const EMAIL = 'bhooper11231@gmail.com'
+const EMAIL = 'me@benhooper.org'
 
 export default function ContactPage() {
   return (
