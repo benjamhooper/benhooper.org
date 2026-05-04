@@ -12,6 +12,14 @@ export default function Footer() {
               &copy; {new Date().getFullYear()} Ben Hooper
             </span>
             <Link
+              href="https://www.stack-shift.net"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-slate-400 hover:text-brand transition-colors"
+            >
+              StackShift
+            </Link>
+            <Link
               href="/Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"

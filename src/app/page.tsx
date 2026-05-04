@@ -34,12 +34,24 @@ export default function Home() {
             </h1>
             <p className="mt-4 text-lg text-slate-300 max-w-xl">
               Kansas-based software consultant who loves writing code almost as much as diagnosing
-              why an enterprise system stopped shipping. I work with organizations to untangle the
-              technical and the human because one usually explains the other. Recovering monolith
-              wrangler. Perpetual pipeline tinkerer. The real problem is rarely the one on the ticket.
+              why an enterprise system stopped shipping. I run{' '}
+              <a
+                href="https://www.stack-shift.net"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-brand hover:underline"
+              >
+                StackShift
+              </a>
+              , a consulting and IT company helping organizations untangle the technical and the
+              human — because one usually explains the other. Recovering monolith wrangler.
+              Perpetual pipeline tinkerer. The real problem is rarely the one on the ticket.
             </p>
             <div className="mt-8 flex flex-wrap justify-center sm:justify-start gap-4">
-              <Button href="/speaking/" variant="primary">
+              <Button href="https://www.stack-shift.net" variant="primary">
+                StackShift
+              </Button>
+              <Button href="/speaking/" variant="secondary">
                 Speaking Topics
               </Button>
               <Button href="/contact/?subject=Speaking+Inquiry" variant="secondary">
@@ -47,6 +59,38 @@ export default function Home() {
               </Button>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Working with Me */}
+      <section className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 pb-16">
+        <SectionHeading
+          title="Working with Me"
+          subtitle="Through StackShift, I offer consulting and advisory services for technology leaders and engineering teams."
+        />
+        <div className="mt-10 grid gap-5 sm:grid-cols-3">
+          <Card
+            title="Infrastructure & Systems"
+            description="Cloud and on-premises infrastructure management across AWS, Azure, and GCP — monitoring, reliability, security hardening, and incident response."
+          />
+          <Card
+            title="AI Advisory"
+            description="Practical guidance for integrating AI into your products and workflows. Architecture for LLM-powered systems, tool selection, and team enablement."
+          />
+          <Card
+            title="Technical Coaching"
+            description="One-on-one and team coaching for engineers and managers covering architecture, code quality, engineering leadership, and career growth."
+          />
+        </div>
+        <div className="mt-8 flex justify-center sm:justify-start">
+          <Button
+            href="https://www.stack-shift.net/services"
+            variant="secondary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            All Services at StackShift →
+          </Button>
         </div>
       </section>
 

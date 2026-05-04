@@ -34,9 +34,18 @@ export default function AboutPage() {
           <div className="mt-6 prose prose-invert prose-slate max-w-none">
             <p>
               I&apos;m a cloud architect and engineering leader with over a decade of experience
-              designing systems that scale and teams that thrive. My work spans greenfield cloud
-              builds, legacy modernization programs, and the platform engineering layer that
-              lives between them.
+              designing systems that scale and teams that thrive. I&apos;m the founder of{' '}
+              <a
+                href="https://www.stack-shift.net"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                StackShift
+              </a>
+              , a consulting and IT company that partners with technology leaders and engineering
+              teams on strategy, AI advisory, technical coaching, and hands-on development. My
+              work spans greenfield cloud builds, legacy modernization programs, and the platform
+              engineering layer that lives between them.
             </p>
             <p>
               I&apos;ve spent most of my career in the Microsoft ecosystem — Azure, .NET, and the
