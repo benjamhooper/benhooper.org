@@ -48,8 +48,8 @@ export default function AboutPage() {
               engineering layer that lives between them.
             </p>
             <p>
-              I&apos;ve spent most of my career in the Microsoft ecosystem — Azure, .NET, and the
-              broader enterprise stack — but I hold strong opinions about polyglot architectures
+              I&apos;ve spent most of my career in the Microsoft ecosystem Azure, .NET, and the
+              broader enterprise stack but I hold strong opinions about polyglot architectures
               and building for operational reality, not just architectural elegance.
             </p>
             <p>

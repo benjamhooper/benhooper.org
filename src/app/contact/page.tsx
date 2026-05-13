@@ -13,7 +13,7 @@ export default function ContactPage() {
       </h1>
       <p className="mt-4 text-slate-400 max-w-xl">
         Whether you&apos;re looking for a conference speaker, exploring consulting options, or just
-        want to start a conversation — I&apos;m happy to hear from you. Reach out directly at{' '}
+        want to start a conversation I&apos;m happy to hear from you. Reach out directly at{' '}
         <a href={`mailto:${EMAIL}`} className="text-brand hover:underline">
           {EMAIL}
         </a>{' '}

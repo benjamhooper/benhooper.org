@@ -17,7 +17,7 @@ export default function SpeakingPage() {
     <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
       <SectionHeading
         title="Speaking"
-        subtitle="I speak at conferences, internal engineering summits, and leadership offsites on the topics I care most about. No fluff — just lessons learned shipping real systems."
+        subtitle="I speak at conferences, internal engineering summits, and leadership offsites on the topics I care most about. No fluff just lessons learned shipping real systems."
       />
 
       <div className="mt-12 grid gap-5 sm:grid-cols-2">

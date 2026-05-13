@@ -44,7 +44,7 @@ export default function Home() {
                 StackShift
               </a>
               , a consulting and IT company helping organizations untangle the technical and the
-              human — because one usually explains the other. Recovering monolith wrangler.
+              human because one usually explains the other. Recovering monolith wrangler.
               Perpetual pipeline tinkerer. The real problem is rarely the one on the ticket.
             </p>
             <div className="mt-8 flex flex-wrap justify-center sm:justify-start gap-4">
@@ -71,7 +71,7 @@ export default function Home() {
         <div className="mt-10 grid gap-5 sm:grid-cols-3">
           <Card
             title="Infrastructure & Systems"
-            description="Cloud and on-premises infrastructure management across AWS, Azure, and GCP — monitoring, reliability, security hardening, and incident response."
+            description="Cloud and on-premises infrastructure management across AWS, Azure, and GCP monitoring, reliability, security hardening, and incident response."
           />
           <Card
             title="AI Advisory"

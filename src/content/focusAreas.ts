@@ -4,7 +4,7 @@ export const focusAreas: FocusArea[] = [
   {
     title: 'Cloud Architecture',
     description:
-      'Designing scalable, resilient systems on Azure and AWS — from greenfield builds to modernizing legacy platforms.',
+      'Designing scalable, resilient systems on Azure and AWS from greenfield builds to modernizing legacy platforms.',
     icon: 'cloud',
   },
   {
@@ -28,7 +28,7 @@ export const focusAreas: FocusArea[] = [
   {
     title: 'AI in Production',
     description:
-      'Moving beyond demos — evaluating, deploying, and operating AI-assisted workflows in real enterprise environments.',
+      'Moving beyond demos evaluating, deploying, and operating AI-assisted workflows in real enterprise environments.',
     icon: 'cpu',
   },
 ]
