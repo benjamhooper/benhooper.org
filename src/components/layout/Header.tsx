@@ -18,7 +18,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b border-slate-800 bg-slate-950/80 backdrop-blur">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          <div className="flex-shrink-0 w-32">
+          <div className="shrink-0 w-32">
             {pathname !== '/' && (
               <Link href="/" className="text-lg font-bold text-white hover:text-brand transition-colors">
                 Ben Hooper

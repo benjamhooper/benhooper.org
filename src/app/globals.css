@@ -1,6 +1,15 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@plugin "@tailwindcss/forms";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand: #2dd4bf; /* teal-400 */
+  --color-surface: #0f172a; /* slate-900 */
+  --color-surface-elevated: #1e293b; /* slate-800 */
+  --font-sans: Inter, ui-sans-serif, system-ui, sans-serif;
+}
 
 @layer base {
   html {
