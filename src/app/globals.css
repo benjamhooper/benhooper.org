@@ -1,21 +1,145 @@
 @import "tailwindcss";
-@plugin "@tailwindcss/typography";
-@plugin "@tailwindcss/forms";
-
-@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --color-brand: #2dd4bf; /* teal-400 */
-  --color-surface: #0f172a; /* slate-900 */
-  --color-surface-elevated: #1e293b; /* slate-800 */
-  --font-sans: Inter, ui-sans-serif, system-ui, sans-serif;
+  --color-ground: #eef3ea;
+  --color-ink: #1d2b33;
+  --color-salmon: #ef6f5e;
+  --color-teal: #3fa596;
+  --color-ochre: #f2c14e;
+  --color-river: #7fb6d6;
+  --font-sans: var(--font-archivo), "Arial Narrow", Arial, sans-serif;
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 @layer base {
   html {
     scroll-behavior: smooth;
+    scrollbar-color: var(--color-ink) var(--color-ground);
   }
   body {
-    @apply bg-slate-950 text-slate-100;
+    background: var(--color-ground);
+    color: var(--color-ink);
+    font-size: 1.125rem;
+    line-height: 1.55;
+    font-variant-numeric: tabular-nums;
+    caret-color: var(--color-salmon);
+  }
+  ::selection {
+    background: var(--color-ink);
+    color: var(--color-ground);
+  }
+  :focus-visible {
+    outline: 3px solid var(--color-ink);
+    outline-offset: 3px;
+  }
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  a {
+    text-underline-offset: 0.2em;
+    text-decoration-thickness: 2px;
+  }
+}
+
+@layer components {
+  /* Map title lettering: condensed, heavy, caps. */
+  .display {
+    font-stretch: 68%;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    line-height: 0.9;
+  }
+
+  .shell {
+    margin-inline: auto;
+    width: 100%;
+    max-width: 82rem;
+    padding-inline: 1.25rem;
+  }
+  @media (min-width: 48rem) {
+    .shell {
+      padding-inline: 3rem;
+    }
+  }
+
+  /* Boxed map label: the one container this world has. */
+  .box {
+    background: var(--color-ground);
+    border: 2px solid var(--color-ink);
+  }
+
+  /* Legend key: a swatch and a label. Every action on the site is one. */
+  .key {
+    --sw: var(--color-river);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    min-height: 3rem;
+    padding: 0.6rem 1.1rem 0.6rem 0.75rem;
+    border: 2px solid var(--color-ink);
+    background: var(--color-ground);
+    color: var(--color-ink);
+    font-weight: 700;
+    line-height: 1.2;
+    text-decoration: none;
+    transition: background-color 0.25s var(--ease-out-expo);
+  }
+  .key::before {
+    content: "";
+    flex: none;
+    width: 2.25rem;
+    height: 1rem;
+    border: 2px solid var(--color-ink);
+    background: var(--sw);
+    transition: background-color 0.25s var(--ease-out-expo);
+  }
+  .key:hover {
+    background: var(--sw);
+  }
+  .key:hover::before {
+    background: var(--color-ink);
+  }
+  .key:active {
+    background: var(--color-ink);
+    color: var(--color-ground);
+  }
+  .key-row {
+    display: flex;
+    width: 100%;
+    border-width: 2px 0 0;
+    padding-inline: 0.25rem;
+  }
+
+  .link {
+    color: inherit;
+    font-weight: 700;
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+  }
+  .link:hover {
+    background: var(--color-ink);
+    color: var(--color-ground);
+    text-decoration-color: transparent;
+  }
+
+  .on-ink :focus-visible {
+    outline-color: var(--color-ground);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
   }
 }

@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 const siteUrl = 'https://www.benhooper.org'
 const siteName = 'Ben Hooper'
 const defaultDescription =
-  'Ben Hooper — cloud architect, engineering leader, and conference speaker focused on DevOps, platform engineering, and AI in production.'
+  'Ben Hooper: cloud architect, engineering leader, and conference speaker focused on DevOps, platform engineering, and AI in production.'
 
 export function buildMetadata(
   title: string,

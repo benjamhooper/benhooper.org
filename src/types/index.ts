@@ -3,6 +3,7 @@ export interface Talk {
   description?: string
   event?: string
   year?: number
+  focusAreas?: string[]
 }
 
 export interface FocusArea {

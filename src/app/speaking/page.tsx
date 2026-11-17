@@ -2,9 +2,7 @@ import type { Metadata } from 'next'
 import { buildMetadata } from '@/lib/metadata'
 import { talks } from '@/content/talks'
 import Button from '@/components/ui/Button'
-import Card from '@/components/ui/Card'
-import SectionHeading from '@/components/ui/SectionHeading'
-import Icon from '@/components/ui/Icon'
+import PageBand from '@/components/ui/PageBand'
 
 export const metadata: Metadata = buildMetadata(
   'Speaking',
@@ -14,48 +12,60 @@ export const metadata: Metadata = buildMetadata(
 
 export default function SpeakingPage() {
   return (
-    <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
-      <SectionHeading
-        title="Speaking"
-        subtitle="I speak at conferences, internal engineering summits, and leadership offsites on the topics I care most about. No fluff just lessons learned shipping real systems."
-      />
-
-      <div className="mt-12 grid gap-5 sm:grid-cols-2">
-        {talks.map((talk) => (
-          <Card
-            key={talk.title}
-            title={talk.title}
-            icon={<Icon name="mic" />}
-          />
-        ))}
-      </div>
-
-      <div className="mt-12 rounded-xl bg-surface-elevated border border-slate-700/50 p-8">
-        <h2 className="text-xl font-semibold text-white">View Full Profile</h2>
-        <p className="mt-2 text-slate-400">
-          My speaker profile on Sessionize includes all current abstracts, past appearances, and references.
+    <>
+      <PageBand title="Speaking" variant="speaking">
+        <p>
+          I speak at conferences, internal engineering summits, and leadership offsites on the
+          topics I care most about. No fluff, just lessons learned shipping real systems.
         </p>
-        <div className="mt-6">
-          <Button
-            href="https://sessionize.com/benjamhooper"
-            variant="secondary"
-          >
-            Open Sessionize Profile
-          </Button>
-        </div>
-      </div>
+      </PageBand>
 
-      <div className="mt-10 rounded-xl border border-brand/30 bg-brand/5 p-8">
-        <h2 className="text-xl font-semibold text-white">Invite Me to Speak</h2>
-        <p className="mt-2 text-slate-400">
-          Organizing a conference, internal summit, or podcast? I&apos;d love to hear about it.
-        </p>
-        <div className="mt-6">
-          <Button href="/contact/?subject=Speaking+Inquiry" variant="primary">
-            Get in Touch
-          </Button>
-        </div>
+      <section className="shell py-16 md:py-24">
+        <ul className="border-b-2 border-ink">
+          {talks.map((talk) => (
+            <li
+              key={talk.title}
+              className="grid gap-x-10 gap-y-2 border-t-2 border-ink py-7 md:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] md:items-baseline md:py-9"
+            >
+              <h2 className="text-2xl font-extrabold leading-tight md:text-4xl md:leading-[1.1]">
+                {talk.title}
+              </h2>
+              <p className="font-semibold">{talk.focusAreas?.join(', ')}</p>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <div className="grid border-t-2 border-ink md:grid-cols-2">
+        <section className="bg-ochre px-5 py-14 md:py-20 md:pl-[max(3rem,calc((100vw-82rem)/2+3rem))] md:pr-12">
+          <h2 className="display text-4xl md:text-5xl">View Full Profile</h2>
+          <p className="mt-4 max-w-[44ch] font-semibold">
+            My speaker profile on Sessionize includes all current abstracts, past appearances, and
+            references.
+          </p>
+          <div className="mt-8">
+            <Button
+              swatch="teal"
+              href="https://sessionize.com/benjamhooper"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open Sessionize Profile
+            </Button>
+          </div>
+        </section>
+        <section className="border-t-2 border-ink bg-salmon px-5 py-14 md:border-l-2 md:border-t-0 md:py-20 md:pl-12 md:pr-[max(3rem,calc((100vw-82rem)/2+3rem))]">
+          <h2 className="display text-4xl md:text-5xl">Invite Me to Speak</h2>
+          <p className="mt-4 max-w-[44ch] font-semibold">
+            Organizing a conference, internal summit, or podcast? I&apos;d love to hear about it.
+          </p>
+          <div className="mt-8">
+            <Button swatch="ochre" href="/contact/?subject=Speaking+Inquiry">
+              Get in Touch
+            </Button>
+          </div>
+        </section>
       </div>
-    </div>
+    </>
   )
 }

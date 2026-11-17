@@ -1,16 +1,21 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Archivo } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import PersonSchema from '@/components/seo/PersonSchema'
 
-const inter = Inter({ subsets: ['latin'] })
+const archivo = Archivo({
+  subsets: ['latin'],
+  axes: ['wdth'],
+  variable: '--font-archivo',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: 'Ben Hooper | Cloud Architect & Engineering Leader',
   description:
-    'Ben Hooper — cloud architect, engineering leader, and conference speaker focused on DevOps, platform engineering, and AI in production.',
+    'Ben Hooper: cloud architect, engineering leader, and conference speaker focused on DevOps, platform engineering, and AI in production.',
   metadataBase: new URL('https://www.benhooper.org'),
   openGraph: {
     siteName: 'Ben Hooper',
@@ -28,13 +33,15 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en" className={archivo.variable}>
       <head>
         <PersonSchema />
       </head>
-      <body className={inter.className}>
-        <Header />
-        <main>{children}</main>
+      <body className="flex min-h-svh flex-col font-sans antialiased">
+        <div className="relative flex-1">
+          <Header />
+          <main>{children}</main>
+        </div>
         <Footer />
       </body>
     </html>

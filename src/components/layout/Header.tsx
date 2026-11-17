@@ -2,7 +2,6 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useState } from 'react'
 
 const navLinks = [
   { label: 'Speaking', href: '/speaking/' },
@@ -12,78 +11,41 @@ const navLinks = [
 
 export default function Header() {
   const pathname = usePathname()
-  const [menuOpen, setMenuOpen] = useState(false)
+  const isCurrent = (href: string) => pathname === href || pathname === href.slice(0, -1)
 
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-800 bg-slate-950/80 backdrop-blur">
-      <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
-          <div className="shrink-0 w-32">
-            {pathname !== '/' && (
-              <Link href="/" className="text-lg font-bold text-white hover:text-brand transition-colors">
-                Ben Hooper
-              </Link>
-            )}
-          </div>
-
-          {/* Desktop nav */}
-          <nav className="hidden sm:flex items-center gap-6" aria-label="Main navigation">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={`text-sm font-medium transition-colors ${
-                  pathname === link.href || pathname === link.href.slice(0, -1)
-                    ? 'text-brand'
-                    : 'text-slate-300 hover:text-white'
-                }`}
-              >
-                {link.label}
-              </Link>
-            ))}
-          </nav>
-
-          {/* Mobile hamburger */}
-          <button
-            className="sm:hidden p-2 text-slate-400 hover:text-white transition-colors"
-            aria-label={menuOpen ? 'Close menu' : 'Open menu'}
-            aria-expanded={menuOpen}
-            onClick={() => setMenuOpen((v) => !v)}
+    <header className="absolute inset-x-0 top-0 z-20">
+      <div className="shell flex h-[4.5rem] items-center justify-between gap-4">
+        {pathname === '/' ? (
+          <span />
+        ) : (
+          <Link
+            href="/"
+            className="box display whitespace-nowrap px-2.5 py-2 text-base no-underline sm:px-3 sm:text-xl hover:bg-ink hover:text-ground"
           >
-            {menuOpen ? (
-              <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            ) : (
-              <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            )}
-          </button>
-        </div>
-      </div>
+            Ben Hooper
+          </Link>
+        )}
 
-      {/* Mobile menu */}
-      {menuOpen && (
-        <nav className="sm:hidden border-t border-slate-800 bg-slate-950" aria-label="Mobile navigation">
-          <div className="mx-auto max-w-5xl px-4 py-3 flex flex-col gap-1">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                onClick={() => setMenuOpen(false)}
-                className={`py-2 px-3 rounded-md text-sm font-medium transition-colors ${
-                  pathname === link.href || pathname === link.href.slice(0, -1)
-                    ? 'text-brand bg-brand/5'
-                    : 'text-slate-300 hover:text-white hover:bg-white/5'
-                }`}
-              >
-                {link.label}
-              </Link>
-            ))}
-          </div>
+        <nav aria-label="Main navigation" className="box flex">
+          {navLinks.map((link, i) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              aria-current={isCurrent(link.href) ? 'page' : undefined}
+              className={`px-2 py-2 text-xs font-bold uppercase tracking-wide no-underline sm:px-4 sm:text-sm sm:tracking-wider ${
+                i > 0 ? 'border-l-2 border-ink' : ''
+              } ${
+                isCurrent(link.href)
+                  ? 'bg-ink text-ground'
+                  : 'hover:bg-ochre'
+              }`}
+            >
+              {link.label}
+            </Link>
+          ))}
         </nav>
-      )}
+      </div>
     </header>
   )
 }

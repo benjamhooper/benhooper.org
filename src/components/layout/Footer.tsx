@@ -1,39 +1,49 @@
 import Link from 'next/link'
 import { socialLinks } from '@/content/social'
-import SocialLink from '@/components/ui/SocialLink'
 
 export default function Footer() {
   return (
-    <footer className="border-t border-slate-800 bg-slate-950">
-      <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-10">
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
-          <div className="flex items-center gap-4">
-            <span className="text-sm text-slate-500">
-              &copy; {new Date().getFullYear()} Ben Hooper
-            </span>
+    <footer className="on-ink bg-ink text-ground">
+      <div className="shell flex flex-col gap-8 py-12 md:flex-row md:items-end md:justify-between">
+        <div>
+          <p className="display text-4xl sm:text-5xl">Ben Hooper</p>
+          <p className="mt-3 text-base">&copy; {new Date().getFullYear()} Ben Hooper. Kansas.</p>
+        </div>
+        <ul className="flex flex-wrap gap-x-6 gap-y-3 text-base font-bold">
+          <li>
             <Link
               href="https://www.stack-shift.net"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm text-slate-400 hover:text-brand transition-colors"
+              className="underline hover:bg-ground hover:text-ink"
             >
               StackShift
             </Link>
+          </li>
+          <li>
             <Link
               href="/Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm text-slate-400 hover:text-brand transition-colors"
+              className="underline hover:bg-ground hover:text-ink"
             >
               Resume
             </Link>
-          </div>
-          <div className="flex items-center gap-4">
-            {socialLinks.map((link) => (
-              <SocialLink key={link.platform} link={link} />
-            ))}
-          </div>
-        </div>
+          </li>
+          {socialLinks.map((link) => (
+            <li key={link.platform}>
+              <a
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={link.label}
+                className="underline hover:bg-ground hover:text-ink"
+              >
+                {link.platform}
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
     </footer>
   )
